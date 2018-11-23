@@ -17,7 +17,9 @@ and open the template in the editor.
                 foreach($value as $row){
                     ?><th><?php echo $row . "  "; ?></th><?php
                 }
-            ?></tr><?php
+                ?><a href="../controllers/Products">Commander</a></tr><?php //pas juste
         }?></table
     </body>
 </html>
+
+<!--/Products/AjouterPanier/id_du_produit

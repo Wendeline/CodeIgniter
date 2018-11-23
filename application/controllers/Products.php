@@ -14,17 +14,4 @@ class Products extends CI_Controller{
     }
     
     
-    
-    function testDB(){
-        
-        echo '<h3> Méthodes de test de la base de données </h3>';
-        $this->load->model('Products_model','ProdManager', TRUE);
-        
-        $ab = $this->ProdManager->get_product('EPICAS');
-        foreach ($ab as $value){
-            foreach ($value as $row) {
-                echo $row . " | ";
-            }
-        }
-    }
 }

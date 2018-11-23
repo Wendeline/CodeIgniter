@@ -12,8 +12,14 @@ class Test_Cart extends CI_Controller{
         //test ici
         $this->load->model('Products_model','ProdManager', TRUE);
                 
-        $this->cart->remove('EPICAS');
+        $this->cart->add('EPICAS');
+        $this->cart->add('EPICAS');
+        $this->cart->add('EPIRIV');
         print_r($this->session->all_userdata());
+        $compter = $this->cart->count();
+        $cout = $this->cart->total();
+        echo $compter . "<br>";
+        echo $cout;
     }
 }
 

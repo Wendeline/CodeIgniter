@@ -54,7 +54,7 @@ class CI_Cart{
         array_shift($panier);
         $nb=0;
         foreach ($panier as $prod) {
-            //à coder
+            $nb = $nb + $prod['qty'];
         }
         return $nb;
     }
@@ -64,7 +64,7 @@ class CI_Cart{
         array_shift($panier);
         $total = 0;
         foreach($panier as $prod){
-            //à coder
+            $total = $total + $prod['qty']*$prod['price'];
         }
         return $total;
     }
